@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet floaty-field.css?>
+
+<VBox prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml" fx:controller="floatyfield.FloatyFieldView">
+  <children>
+    <Label fx:id="label" styleClass="floaty-field-inactive" text="Label">
+      <font>
+        <Font name="System Bold" size="10.0" />
+      </font>
+      <VBox.margin>
+        <Insets />
+      </VBox.margin>
+    </Label>
+    <TextField fx:id="field" alignment="TOP_LEFT" maxHeight="-1.0" prefWidth="-1.0" promptText="JHKJKHKJHJK" style="-fx-padding:0px;" styleClass="floaty-field, no-border" text="">
+      <VBox.margin>
+        <Insets bottom="2.0" />
+      </VBox.margin>
+    </TextField>
+  </children>
+</VBox>

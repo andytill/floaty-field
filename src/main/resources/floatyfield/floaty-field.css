@@ -1,0 +1,18 @@
+
+.no-border {
+	-fx-background-color: transparent
+}
+
+.floaty-field {
+	-fx-font-size: 1.3em;
+}
+
+.floaty-field-active {
+	/* blue, same as a text selection in caspian */
+	-fx-text-fill: #0093ff;
+}
+
+.floaty-field-inactive {
+	/* light gray */
+	-fx-text-fill: #b2b2b2;
+}
