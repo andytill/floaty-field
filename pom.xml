@@ -2,5 +2,32 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>andytill</groupId>
   <artifactId>floaty-field</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
+  <name>floaty-field</name>
+  <url>https://github.com/andytill/floaty-field</url>
+  <description>Super nice, labelled text field for your forms.</description>
+  <developers>
+    <developer>
+      <id>andytill</id>
+      <name>Andy Till</name>
+      <email>kittyburrito@googlemail.com</email>
+      <url>http://andrewtill.blogspot.co.uk/</url>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>The MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <issueManagement>
+  	<url>https://github.com/andytill/floaty-field/issues</url>
+  	<system>github</system>
+  </issueManagement>
+  <scm>
+  	<developerConnection>andytill</developerConnection>
+  	<connection>https://github.com/andytill/floaty-field</connection>
+  	<url>https://github.com/andytill/floaty-field.git</url>
+  </scm>
 </project>
