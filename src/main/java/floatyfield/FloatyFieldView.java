@@ -15,6 +15,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.util.Duration;
 
 public class FloatyFieldView implements Initializable {
@@ -42,6 +43,14 @@ public class FloatyFieldView implements Initializable {
         label.setVisible(false);
         label.visibleProperty().bind(labelActive);
         label.textProperty().bind(field.promptTextProperty());
+        label.setLabelFor(field);
+        
+        // make sure that any click within this control will give focus to the input field
+        field.getParent().setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent e) {
+                field.requestFocus();
+            }});
     }
 
     public final StringProperty promptTextProperty() {
