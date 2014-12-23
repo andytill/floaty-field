@@ -20,9 +20,6 @@
       </VBox.margin>
     </Label>
     <TextField fx:id="field" alignment="TOP_LEFT" maxHeight="-1.0" prefWidth="-1.0" promptText="JHKJKHKJHJK" style="-fx-padding:0px;" styleClass="floaty-field, no-border" text="">
-      <VBox.margin>
-        <Insets bottom="2.0" />
-      </VBox.margin>
     </TextField>
   </children>
 </VBox>

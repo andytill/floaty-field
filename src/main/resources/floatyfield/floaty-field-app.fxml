@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<VBox prefHeight="-1.0" prefWidth="312.0" spacing="0.0" xmlns:fx="http://javafx.com/fxml" fx:controller="floatyfield.FloatyFieldAppView">
+<VBox prefHeight="-1.0" prefWidth="312.0" spacing="2.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="floatyfield.FloatyFieldAppView">
   <children>
-    <fx:include fx:id="titleField" source="floaty-field.fxml" prefHeight="-1.0" prefWidth="-1.0" />
+    <fx:include fx:id="titleField" prefHeight="-1.0" prefWidth="-1.0" source="floaty-field.fxml" />
     <Separator prefWidth="200.0" />
     <HBox prefHeight="-1.0" prefWidth="-1.0">
       <children>
-        <fx:include id="field2" fx:id="priceField" source="floaty-field.fxml" prefWidth="88.0" HBox.hgrow="SOMETIMES" />
+        <fx:include id="field2" fx:id="priceField" prefWidth="88.0" source="floaty-field.fxml" HBox.hgrow="SOMETIMES" />
         <Separator orientation="VERTICAL" prefHeight="-1.0" />
         <fx:include id="field2" fx:id="locationField" source="floaty-field.fxml" HBox.hgrow="ALWAYS" />
       </children>
