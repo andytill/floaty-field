@@ -6,11 +6,10 @@ import java.util.ResourceBundle;
 import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;
 import javafx.beans.binding.BooleanBinding;
+import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.StringProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -51,6 +50,10 @@ public class FloatyFieldView implements Initializable {
     public final StringProperty textProperty() {
         return field.textProperty();
     }
+    
+    public final BooleanProperty disableProperty() {
+        return field.disableProperty();
+    }
 
     private final class LabelFadeIn implements ChangeListener<Boolean> {
         public void changed(ObservableValue<? extends Boolean> o, Boolean ob, Boolean nb) {
@@ -70,12 +73,11 @@ public class FloatyFieldView implements Initializable {
                 tt.setToY(y);
                 tt.setCycleCount(1);
                 tt.setAutoReverse(true);
-                tt.setOnFinished(new EventHandler<ActionEvent>() {
-                    public void handle(ActionEvent e) {
-                        // if this doesn't happen then the translate property quickly becomes out of sync
-                        // when rapidly tabbing
-                        label.setTranslateY(0d);
-                    }});
+
+                // if this doesn't happen then the translate property quickly becomes out of sync
+                // when rapidly tabbing
+                tt.setOnFinished((e) -> { label.setTranslateY(0d); });
+                
                 tt.play();
             }
         }
