@@ -16,3 +16,7 @@
 	/* light gray */
 	-fx-text-fill: #b2b2b2;
 }
+
+.floaty-label .text-field:disabled {
+    -fx-opacity: 1.0;
+}
