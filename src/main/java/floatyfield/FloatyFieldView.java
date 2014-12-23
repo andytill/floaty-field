@@ -41,6 +41,10 @@ public class FloatyFieldView implements Initializable {
         label.setVisible(false);
         label.visibleProperty().bind(labelActive);
         label.textProperty().bind(field.promptTextProperty());
+        label.setLabelFor(field);
+        
+        // make sure that any click within this control will give focus to the input field
+        field.getParent().setOnMouseClicked((e) -> { field.requestFocus(); });
     }
 
     public final StringProperty promptTextProperty() {

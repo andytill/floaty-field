@@ -11,7 +11,7 @@
 
 <VBox prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml" fx:controller="floatyfield.FloatyFieldView">
   <children>
-    <Label fx:id="label" styleClass="floaty-field-inactive" text="Label">
+    <Label fx:id="label" maxWidth="1.7976931348623157E308" styleClass="floaty-field-inactive" text="Label">
       <font>
         <Font name="System Bold" size="10.0" />
       </font>
@@ -19,7 +19,7 @@
         <Insets />
       </VBox.margin>
     </Label>
-    <TextField fx:id="field" alignment="TOP_LEFT" maxHeight="-1.0" prefWidth="-1.0" promptText="JHKJKHKJHJK" style="-fx-padding:0px;" styleClass="floaty-field, no-border" text="">
+    <TextField fx:id="field" alignment="TOP_LEFT" maxHeight="-1.0" maxWidth="1.7976931348623157E308" prefWidth="-1.0" promptText="Field" style="-fx-padding:0px;" styleClass="floaty-field, no-border" text="">
     </TextField>
   </children>
 </VBox>
