@@ -31,9 +31,9 @@
   <issueManagement>
   	<url>https://github.com/andytill/floaty-field/issues</url>
   	<system>github</system>
-  </issueManagement>
+  </issueManagement>  
   <scm>
-  	<developerConnection>scm:git:git@github.com/andytill/floaty-field.git</developerConnection>
-  	                <url>scm:git:git@github.com/andytill/floaty-field.git</url>
+  	<developerConnection>scm:git:git@github.com:andytill/floaty-field.git</developerConnection>
+  	                <url>scm:git:git@github.com:andytill/floaty-field.git</url>
   </scm>
 </project>
