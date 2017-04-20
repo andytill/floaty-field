@@ -32,8 +32,10 @@
   	<url>https://github.com/andytill/floaty-field/issues</url>
   	<system>github</system>
   </issueManagement>  
+
   <scm>
   	<developerConnection>scm:git:git@github.com:andytill/floaty-field.git</developerConnection>
   	                <url>scm:git:git@github.com:andytill/floaty-field.git</url>
+	<tag>HEAD</tag>
   </scm>
 </project>
