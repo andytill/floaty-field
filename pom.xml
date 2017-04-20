@@ -35,6 +35,6 @@
   <scm>
   	<developerConnection>andytill</developerConnection>
   	<connection>https://github.com/andytill/floaty-field</connection>
-  	<url>https://github.com/andytill/floaty-field.git</url>
+  	<url>scm:git:git@github.com/andytill/floaty-field.git</url>
   </scm>
 </project>
