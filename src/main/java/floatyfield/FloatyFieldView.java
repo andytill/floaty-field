@@ -27,10 +27,20 @@ public class FloatyFieldView implements Initializable {
     @FXML
     private TextField field;
 
+    /**
+     * Constructor for manual instantiation.
+     */
     public FloatyFieldView(Label label, TextField field) {
         this.label = label;
         this.field = field;
         initialize(null, null);
+    }
+
+    /**
+     * Used for FXML instantiation only.
+     */
+    public FloatyFieldView() {
+
     }
 
     @Override
